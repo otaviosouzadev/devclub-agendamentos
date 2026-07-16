@@ -12,6 +12,6 @@ export function Layout() {
       <div className="header-actions"><nav className="nav"><NavLink to="/" end>Agendar</NavLink><NavLink to="/admin">Administração</NavLink></nav><button className="theme-button" onClick={()=>setDark(!dark)} aria-label="Alternar tema">{dark?<Sun size={18}/>:<Moon size={18}/>}</button></div>
     </div></header>
     <main><Outlet/></main>
-    <footer className="footer"><strong>AgendaPro</strong><span>Desafio técnico DevClub • React + TypeScript</span></footer>
+    <footer className="footer"><strong>AgendaPro</strong><span>Sistema de Agendamento Online • React • TypeScript • Vite</span></footer>
   </div>;
 }
