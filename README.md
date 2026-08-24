@@ -1,108 +1,135 @@
-# AgendaPro — Desafio Técnico DevClub
+# 📅 AgendaPro
 
-Aplicação responsiva de agendamento de serviços com fluxo para clientes e painel administrativo. O projeto foi desenvolvido para demonstrar organização de código, experiência do usuário, validações, persistência e uso consciente de Inteligência Artificial.
+> Sistema web de agendamento de serviços desenvolvido com React e TypeScript.
 
-## Demonstração
+O **AgendaPro** é uma aplicação responsiva criada para facilitar o processo de agendamento de serviços, oferecendo uma experiência simples para clientes e um painel administrativo para gerenciamento dos atendimentos.
 
-- Área do cliente: `/`
-- Administração: `/admin`
-- E-mail: `admin@agendapro.com`
-- Senha: `123456`
+O projeto foi desenvolvido como parte de um desafio técnico e também como forma de colocar em prática conceitos de desenvolvimento front-end, organização de código, validações e experiência do usuário.
 
-> O login é demonstrativo e utiliza `sessionStorage`. Em produção real, a autenticação seria feita no backend com sessão segura.
+---
 
-## Funcionalidades
+## 🌐 Demonstração
 
-### Cliente
-- Cadastro de nome, telefone, serviço, data, horário e observações;
-- Máscara de telefone e validação de campos;
-- Bloqueio de datas passadas;
-- Consulta visual dos horários disponíveis;
-- Bloqueio de horários já ocupados;
-- Seleção de serviço por cards;
-- Modal de confirmação com resumo da reserva;
-- Layout responsivo e tema claro/escuro.
+🚀 **Acesse o projeto online:**
 
-### Administração
-- Tela de login demonstrativa;
-- Dashboard com indicadores;
-- Busca por cliente, telefone ou serviço;
-- Filtro por data e status;
-- Alteração do status do atendimento;
-- Exclusão com confirmação;
-- Exportação dos dados filtrados em CSV;
-- Persistência automática dos agendamentos.
+👉 https://agendaprobr.vercel.app/
 
-## Tecnologias
+### 🔐 Acesso administrativo
 
-- React
-- TypeScript
-- Vite
-- React Router DOM
-- Lucide React
-- CSS responsivo com variáveis de tema
-- LocalStorage e SessionStorage
+O projeto possui uma área administrativa demonstrativa.
 
-## Inteligência Artificial
+**E-mail:** `admin@agendapro.com`
 
-A IA foi utilizada como ferramenta de apoio para:
+**Senha:** `123456`
 
-- Planejamento da arquitetura e fluxo das telas;
-- Geração e revisão de componentes;
-- Sugestões de experiência do usuário;
-- Revisão de validações e casos de borda;
-- Documentação e organização do README.
+> ⚠️ O login administrativo é apenas demonstrativo e utiliza `sessionStorage`. Em uma aplicação real, a autenticação deverá ser realizada por um backend com mecanismos seguros de sessão e autorização.
 
-Todas as decisões, integrações e testes foram revisados durante o desenvolvimento. A IA foi tratada como ferramenta de produtividade, não como substituta da validação técnica.
+---
 
-## Executar localmente
+## ✨ Funcionalidades
 
-Requisitos: Node.js LTS ou superior.
+### 👤 Área do cliente
 
-```bash
-npm install
-npm run dev
-```
+- 📝 Cadastro de nome, telefone, serviço, data, horário e observações
+- 📱 Máscara e validação de telefone
+- ✅ Validação dos campos do formulário
+- 📅 Bloqueio de datas anteriores
+- 🕐 Visualização dos horários disponíveis
+- 🚫 Bloqueio de horários já ocupados
+- 💼 Seleção de serviços através de cards
+- 📋 Modal de confirmação da reserva
+- 🌓 Tema claro e escuro
+- 📱 Interface responsiva
 
-Acesse `http://localhost:5173`.
+### 🛠️ Painel administrativo
 
-## Build de produção
+- 🔐 Tela de login
+- 📊 Dashboard com indicadores
+- 🔎 Busca por cliente, telefone ou serviço
+- 📅 Filtro por data
+- 🔄 Filtro por status
+- ✏️ Alteração do status dos atendimentos
+- 🗑️ Exclusão de agendamentos com confirmação
+- 📥 Exportação dos dados filtrados em CSV
+- 💾 Persistência automática dos agendamentos
 
-```bash
-npm run build
-npm run preview
-```
+---
 
-## Decisões técnicas
+## 🛠️ Tecnologias utilizadas
 
-A aplicação foi organizada em páginas, componentes, tipos e uma camada de serviço responsável pela persistência. Essa separação evita que regras de negócio fiquem misturadas à interface.
+<div align="left">
 
-O LocalStorage foi escolhido para que o avaliador consiga executar o desafio imediatamente, sem precisar configurar credenciais externas. A camada `appointmentService` pode ser substituída por Firebase, Supabase ou uma API REST sem reescrever as telas.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-Os horários cancelados voltam a ficar disponíveis. A verificação de conflito também é feita no momento da criação para reduzir riscos de duplicidade na experiência local.
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-## Estrutura
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
+
+---
+
+## 🧠 O que foi praticado
+
+Durante o desenvolvimento do projeto, foram colocados em prática conceitos como:
+
+- Componentização com React
+- Tipagem com TypeScript
+- Gerenciamento de rotas
+- Organização de componentes
+- Validação de formulários
+- Manipulação de estado
+- Persistência de dados
+- Responsividade
+- Temas claro e escuro
+- Organização de regras de negócio
+- Experiência do usuário
+- Exportação de dados
+- Boas práticas de desenvolvimento
+
+---
+
+## 🤖 Uso de Inteligência Artificial
+
+A Inteligência Artificial foi utilizada como **ferramenta de apoio ao desenvolvimento**, principalmente para:
+
+- 💡 Planejamento da arquitetura e fluxo das telas
+- 🧩 Sugestões para componentes
+- 🎨 Melhorias de experiência do usuário
+- 🔎 Revisão de validações
+- 🐛 Análise de possíveis problemas
+- 📝 Apoio na documentação
+
+As decisões de implementação, integrações e testes foram revisadas durante o desenvolvimento.
+
+> A IA foi utilizada como ferramenta de produtividade e aprendizado, não como substituta da validação técnica.
+
+---
+
+## 📂 Estrutura do projeto
 
 ```text
 src/
 ├── components/
 │   └── Layout.tsx
+│
 ├── pages/
 │   ├── ClientPage.tsx
 │   └── AdminPage.tsx
+│
 ├── services/
 │   └── appointmentService.ts
+│
 ├── types/
 │   └── appointment.ts
+│
 ├── main.tsx
 └── styles.css
-```
-
-## Melhorias futuras
-
-- API e banco de dados em nuvem;
-- Autenticação segura com controle de acesso;
-- Atualização em tempo real entre dispositivos;
-- Testes automatizados;
-- Envio de confirmação por e-mail ou WhatsApp;
-- Configuração de duração e disponibilidade por serviço.
